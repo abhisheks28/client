@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState, Suspense, lazy } from 'react';
 import { Box, Grid, Typography, CircularProgress, Container, Button, Stack } from '@mui/material';
-import { Users, CheckCircle, XCircle, FileText, LayoutDashboard, List, Trophy, AlertTriangle, Gift, GraduationCap } from 'lucide-react';
+import { Users, CheckCircle, XCircle, FileText, LayoutDashboard, List, Trophy, AlertTriangle, Gift, GraduationCap, FileQuestion } from 'lucide-react';
 // Firebase imports removed
 import StatCard from './StatCard';
 import { MarksBarChart, StudentsAreaChart } from './Charts';
@@ -187,6 +187,14 @@ const DashboardContent = ({ logoutAction }) => {
                     sx={{ borderRadius: 2, textTransform: 'none', px: 3 }}
                 >
                     Teachers
+                </Button>
+                <Button
+                    variant="outlined"
+                    startIcon={<FileQuestion size={20} />}
+                    onClick={() => window.location.href = '/admin/question-templates'}
+                    sx={{ borderRadius: 2, textTransform: 'none', px: 3 }}
+                >
+                    Question Templates
                 </Button>
             </Stack>
 

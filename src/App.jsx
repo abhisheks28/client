@@ -32,6 +32,7 @@ import RapidMathSummary from "@/pages/RapidMathSummary";
 import SpeedTestPage from "@/pages/SpeedTestPage";
 import SkillPracticeSession from "@/features/skill-practice/components/SkillPracticeSession";
 import SkillAssessmentSession from "@/features/skill-practice/components/SkillAssessmentSession";
+import QuestionTemplateManager from "@/features/admin/components/QuestionTemplateManager";
 
 // ScrollToTop Component
 function ScrollToTop() {
@@ -81,6 +82,7 @@ function App() {
                             <Route path="/teacher-dashboard/student/:uid" element={<TeacherStudentView />} />
                             <Route path="/teacher-dashboard/neet-upload" element={<NeetUploadClient />} />
                             <Route path="/teacher-dashboard/neet-assessment" element={<NeetAssessmentClient />} />
+                            <Route path="/admin/question-templates" element={<QuestionTemplateManager />} />
                             <Route path="/tutor-bookings" element={<TutorBookingsClient />} />
 
                             {/* Quiz Routes */}
